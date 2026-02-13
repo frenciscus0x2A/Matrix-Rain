@@ -2,7 +2,7 @@
 
 Canvas falling characters. ES module, zero deps.
 
-**[Demo](https://frenciscus0x2A.github.io/Matrix-Rain/)** · [Repo](https://github.com/frenciscus0x2A/Matrix-Rain)
+**[Demo](https://frenciscus0x2A.github.io/Matrix-Rain/)**
 
 ## Usage
 
@@ -46,10 +46,6 @@ Chainable.
 | `autoPauseOnHidden` | true | Pause when tab hidden |
 | `resizeDebounceMs` | 200 | Resize delay |
 | `chars` | (built-in) | Character set |
-
-## GitHub Pages
-
-Branch `main` → Folder `/ (root)` → Save.
 
 ## License
 
