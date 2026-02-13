@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Matrix Rain — canvas falling chars. ES module, zero deps." />
+  <title>Matrix Rain</title>
+  <link rel="stylesheet" href="src/matrix-rain.css" />
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #000; color: #e5e5e5; font-family: system-ui, sans-serif; }
+    main { position: relative; z-index: 1; padding: 2rem; max-width: 42rem; }
+    h1 { font-weight: 600; letter-spacing: -0.02em; }
+    code { background: rgba(255,255,255,.08); padding: .15em .35em; border-radius: .25em; font-size: .9em; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Matrix Rain</h1>
+    <p>Canvas falling chars. ES module, zero deps.</p>
+    <p><code>new MatrixRain(opts).mount()</code></p>
+  </main>
+  <script type="module">
+    import { MatrixRain } from "./src/matrix-rain.js";
+    const matrix = new MatrixRain({
+      heightVh: 100,
+      fontSize: 18,
+      columnSpacing: 4,
+      charSpacingY: 24,
+      matrixColor: "#6EE7B7",
+      headColor: "#F0D84D",
+      bgColor: "#000000",
+      blurPx: 0.5
+    });
+    matrix.mount();
+  </script>
+</body>
+</html>
